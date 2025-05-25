@@ -1,5 +1,10 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "web1", 3307);
+$conn = new mysqli(
+  "sql211.infinityfree.com",
+  "if0_39076735",
+  "Wpb1cLwxdPXU",
+  "if0_39076735_web1"
+);
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
