@@ -1,94 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/shop.css">
-  <link rel="stylesheet" href="../css/navbar.css">
-  <script src="../js/shop.js"></script>
-</head>
+  <!DOCTYPE html>
+  <html lang="en">
 
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="../js/shop.js"></script>
+  </head>
 
-  <div class="container1">
-    <h1>MySite</h1>
-    <ul style="flex-wrap: wrap;">
-      <li><a href="home.html" style="color: black; text-decoration: none;">Home</a></li>
-      <li><a href="shop.html" style="color: black; text-decoration: none;">Shop</a></li>
-      <li><a href="about.html"style="color: black; text-decoration: none;">About</a></li>
-      <li><a href="contact.html"style="color: black; text-decoration: none;">Contact</a></li>
-      <li id="cart-icon">🛒 <span id="cart-count">0</span></li>
-      <li><a href="../php/profile.php"style="color: black; text-decoration: none;">👤</a></li>
-    </ul>
-  </div>
-  <div class="container2">
-    <h2>Products</h2>
-    <div class="category-nav text-center my-4">
-      <button class="nav-btn" id="prev-category">&lt;</button>
-      <span id="category-name">T-Shirts</span>
-      <button class="nav-btn" id="next-category">&gt;</button>
+  <body>
+
+    <div class="container1">
+      <h1>MySite</h1>
+      <ul style="flex-wrap: wrap;">
+        <li><a href="home.html" style="color: black; text-decoration: none;">Home</a></li>
+        <li><a href="shop.html" style="color: black; text-decoration: none;">Shop</a></li>
+        <li><a href="about.html"style="color: black; text-decoration: none;">About</a></li>
+        <li><a href="contact.html"style="color: black; text-decoration: none;">Contact</a></li>
+        <li id="cart-icon">🛒 <span id="cart-count">0</span></li>
+        <li><a href="../php/login.php"style="color: black; text-decoration: none;">👤</a></li>
+      </ul>
     </div>
-  </div>
-
-
-
-  <section class="product-grid">
-    <div class="row justify-content-center">
-      <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2 ">
-        <div class="product-card">
-          <img src="../images/shirt1.jpg" alt="Shirt 1" />
-          <p class="brand">adidas</p>
-          <h4>Cartoon Astronaut T-Shirts</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <p class="price">$99</p>
-          <button class="cart-btn"onclick="addToCart()">🛒</button>
-        </div>
-      </div>
-      <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="product-card">
-          <img src="../images/shirt2.jpg" alt="Shirt 2" />
-          <p class="brand">adidas</p>
-          <h4>Cartoon Astronaut T-Shirts</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <p class="price">$78</p>
-          <button class="cart-btn"onclick="addToCart()">🛒</button>
-        </div>
-      </div>
-      <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="product-card">
-          <img src="../images/shirt3.jpg" alt="Shirt 2" />
-          <p class="brand">adidas</p>
-          <h4>Cartoon Astronaut T-Shirts</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <p class="price">$105</p>
-          <button class="cart-btn"onclick="addToCart()">🛒</button>
-        </div>
-      </div>
-      <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="product-card">
-          <img src="../images/shirt4.jpg" alt="Shirt 2" />
-          <p class="brand">adidas</p>
-          <h4>Cartoon Astronaut T-Shirts</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <p class="price">$150</p>
-          <button class="cart-btn" onclick="addToCart()">🛒</button>
-        </div>
-      </div>
-      <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="product-card">
-          <img src="../images/shirt4.jpg" alt="Shirt 2" />
-          <p class="brand">adidas</p>
-          <h4>Cartoon Astronaut T-Shirts</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <p class="price">$150</p>
-          <button class="cart-btn" onclick="addToCart()">🛒</button>
-        </div>
+    <div class="container2">
+      <h2>Products</h2>
+      <div class="category-nav text-center my-4">
+        <button class="nav-btn" id="prev-category">&lt;</button>
+        <span id="category-name">T-Shirts</span>
+        <button class="nav-btn" id="next-category">&gt;</button>
       </div>
     </div>
-  </section>
+
+
+
+    <section class="product-grid">
+      <div class="row justify-content-center">
+        <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2 ">
+          <div class="product-card">
+            <img src="../images/shirt1.jpg" alt="Shirt 1" />
+            <p class="brand">adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">$99</p>
+            <button class="cart-btn"onclick="addToCart()">🛒</button>
+          </div>
+        </div>
+        <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="product-card">
+            <img src="../images/shirt2.jpg" alt="Shirt 2" />
+            <p class="brand">adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">$78</p>
+            <button class="cart-btn"onclick="addToCart()">🛒</button>
+          </div>
+        </div>
+        <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="product-card">
+            <img src="../images/shirt3.jpg" alt="Shirt 2" />
+            <p class="brand">adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">$105</p>
+            <button class="cart-btn"onclick="addToCart()">🛒</button>
+          </div>
+        </div>
+        <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="product-card">
+            <img src="../images/shirt4.jpg" alt="Shirt 2" />
+            <p class="brand">adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">$150</p>
+            <button class="cart-btn" onclick="addToCart()">🛒</button>
+          </div>
+        </div>
+        <div class="col-auto col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="product-card">
+            <img src="../images/shirt4.jpg" alt="Shirt 2" />
+            <p class="brand">adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">$150</p>
+            <button class="cart-btn" onclick="addToCart()">🛒</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -96,7 +97,7 @@
 
 
 
-<script src="../js/cart.js"></script>
-</body>
+  <script src="../js/cart.js"></script>
+  </body>
 
-</html>
+  </html>
